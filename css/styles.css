@@ -35,6 +35,7 @@
     /* header */
     .page-header {
       border-bottom: 1px solid #e7e9fc;
+      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     }
 
     .header-container {
@@ -72,12 +73,25 @@
   color: #2e2f42;
   display: block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.nav-link.current {
+  position: relative;
+}
+.nav-link.current::before {
+  content: "";
+  background-color: #404bbf;
+  position: absolute;
+  bottom: -1px;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
 .nav-link:focus,
 .nav-link:hover, 
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.nav-link.current {
   color: #404bbf;
 }
 .contacts {
@@ -97,6 +111,7 @@
     color: #434455;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
