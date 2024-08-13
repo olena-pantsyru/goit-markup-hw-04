@@ -78,10 +78,11 @@
 .nav-link.current {
   position: relative;
 }
-.nav-link.current::before {
-  content: "";
+.nav-link.current::after {
+  content: '';
   background-color: #404bbf;
   position: absolute;
+  left: 0;
   bottom: -1px;
   border-radius: 2px;
   height: 4px;
