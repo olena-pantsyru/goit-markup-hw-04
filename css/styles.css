@@ -117,6 +117,16 @@
 }
 
 /* hero */
+
+.page-hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+
 .hero-container {
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herofon.jpg);
@@ -160,6 +170,7 @@
     border-radius: 4px;
     display:block;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-hero:hover,
 .button-hero:focus {
