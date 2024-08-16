@@ -235,7 +235,7 @@
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
-    
+
   }
 
   .title-advantage-item {
@@ -376,11 +376,38 @@
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    
   }
 
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
+
+  .portfolio-item:hover .portfolio-cover-text {
+    transform: translate(0);
+  }
+
+  .portfolio-cover {
+    position: relative;
+    overflow: hidden;
+  }
+
+
+ .portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  background-color: #4d5ae5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    height: 100%;
+    left: 0;
+    padding: 32px;
+    padding-top: 40px;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+ }
 
   .review {
     padding: 32px 16px;
